@@ -1,0 +1,13 @@
+.header-main {
+  background-image: url(/marshrut_elbrus.jpg);
+  background-color: #c7b39b; /* Цвет фона */
+  height: 271px;
+  max-height: 271px;
+  background-position: left bottom; /* Положение фона */
+  background-repeat: no-repeat; /* Отменяем повторение фона */
+  position: sticky;
+  top: 0;
+}
+.aligncenter {
+  width: 100%;
+}
