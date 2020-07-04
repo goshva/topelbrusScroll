@@ -1,13 +1,104 @@
 .header-main {
-  background-image: url(/marshrut_elbrus.jpg);
+  background-image: url(i/marshrut_elbus_sever_3000.jpg);
   background-color: #c7b39b; /* Цвет фона */
-  height: 271px;
-  max-height: 271px;
+  background-size: cover;
+  height: 171px;
+  /* max-height: 171px; */
   background-position: left bottom; /* Положение фона */
   background-repeat: no-repeat; /* Отменяем повторение фона */
-  position: sticky;
-  top: 0;
-}
-.aligncenter {
+  position: fixed;
+  right: 0;
   width: 100%;
+  bottom: 0;
+  touch-action: auto;
+}
+
+body {
+  /* padding: 271px 0 0 10px; */
+}
+
+h1,
+h2,
+p,
+li {
+  font-size: 120%;
+  line-height: 130%;
+  color: #444;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.025em;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  margin-left: 10%;
+}
+p,
+img,
+ul {
+  display: block;
+  width: 90%;
+  max-width: 1000px;
+}
+h1 {
+  font-size: 150%;
+}
+img {
+  margin: 20px auto;
+}
+.cr {
+  position: fixed;
+  height: 800px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  top: 0;
+  background: url("marshrut_elbrus.jpg");
+}
+.hl,
+.leg {
+  position: absolute;
+}
+.hl {
+  background: #1c4f6d;
+  font-size: 0.8em;
+  padding: 3px 8px;
+}
+.hl,
+.trns {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.hn {
+  color: #fff;
+}
+.hv {
+  color: #ffec6b;
+}
+.hn a {
+  color: #fff !important;
+}
+.hn a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+.leg {
+  width: 8px;
+  height: 19px;
+  background: url("n.png") no-repeat left top;
+  bottom: -19px;
+}
+.leg.botr {
+  right: 20px;
+}
+.leg.botl {
+  left: 20px;
+}
+.leg.topr {
+  background: url("n2.png") no-repeat left top;
+  width: 18px;
+  height: 13px;
+  right: -14px;
+  top: 1px;
 }

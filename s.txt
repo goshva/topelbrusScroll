@@ -1,0 +1,11 @@
+botr | 862,45 | vostochnaya-vershina-elbrusa | Восточная вершина 5621 м
+botl | 999,53 | zapadnaya-vershina-elbrusa | Западная вершина 5642 м
+topr | 850,85 | skaly-lenca | Скалы Ленца 4600-5200 м
+topr | 845,148 | povorot | поворотная точка
+botr | 856,167 | severnyj-priyut-na-elbruse | Приют Лакколит 3800 м
+botl | 865,202 | moon-meadow | Лунная поляна 3500 м
+botr | 624,237 | griby | Каменные грибы 3250 м
+botl | 870,346 | aerodrom | &#171;Немецкий&#187; аэродром 2900 м
+botr | 761,458 | 3in1 | родник в начале балки
+botl | 372,560 | bazovyj-lager-elbrus-sever | Базовый лагерь Лакколит 2500 м
+botl | 228,558 | serebryniy | Серебряный источник 2450 м
