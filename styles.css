@@ -9,8 +9,16 @@
   position: fixed;
   right: 0;
   width: 100%;
-  bottom: 0;
+  top: 0;
   touch-action: auto;
+  animation-name: mymove;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transition: background-position 3s;
+}
+.main {
+  padding-top: 137px;
 }
 
 body {

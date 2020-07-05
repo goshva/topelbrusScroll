@@ -1,9 +1,6 @@
 var fullScreenHeader = false;
 i = 0;
 var ancorsHeigthList = {};
-var maxY =
-  document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
 var header = document.getElementsByClassName("header-main")[0];
 var els = document.getElementsByClassName("anchors");
 console.log(els);
@@ -16,37 +13,26 @@ function zr() {
   }
   fullScreenHeader = !fullScreenHeader;
 }
-function setAnchor(anchor) {
-  location.href = location.href.split("#")[0] + "#" + anchor;
+//function setAnchor(anchor) {
+//  location.href = location.href.split("#")[0] + "#" + anchor;
+//}
+// if (location.href.split("#")[1] == el.id) {
+//   moveHeaderto(el.dataset.h, el.dataset.w, el.dataset.z);
+// }
+function forEachAnchors() {
+  Array.from(els).forEach((el) => {
+    if (
+      window.scrollY < el.offsetTop &&
+      el.offsetTop < window.innerHeight + window.scrollY
+    ) {
+      moveHeaderto(el.dataset.h, el.dataset.w, el.dataset.z);
+    }
+  });
 }
-
-Array.from(els).forEach((el) => {
-  el.dataset.id = el.id;
-  ancorsHeigthList[el.offsetTop] = el.dataset;
-  console.log(ancorsHeigthList);
-
-  if (location.href.split("#")[1] == el.id) {
-    moveHeaderto(el.dataset.h, el.dataset.w, el.dataset.z);
-  }
-});
-
 window.addEventListener(
   "scroll",
   function () {
-    //console.log(window.scrollY);
-    //console.log(maxY);
-    //console.log(Object.keys(ancorsHeigthList));
-
-    anchorKeys = Object.keys(ancorsHeigthList);
-    if (anchorKeys[i] <= this.window.scrollY) {
-      mapdata = ancorsHeigthList[anchorKeys[i]];
-      moveHeaderto(mapdata.h, mapdata.w, mapdata.z);
-      i++;
-    }
-
-    //  var scrollPercent = window.scrollY / maxY;
-    //  console.log(scrollPercent + "%");
-    // moveHeaderto(scrollPercent);
+    forEachAnchors();
   },
   false
 );
